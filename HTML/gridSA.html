@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Grid SIN ANCHO</title>
+    <!-- Fichero que llama al archivo Bootstrap -->
+    <link rel="stylesheet" href="../styleGridSA.css">
 </head>
-<body>
-    
+<body class="text-center display-3">
+    <div class="row m-1">
+        <div class="col bg-primary border border-5 border-light">FULL WIDTH</div>
+    </div>
+    <div class="row m-1">
+        <div class="col bg-danger border border-5 border-light">HALF WIDTH</div>
+        <div class="col bg-danger border border-5 border-light">HALF WIDTH</div>
+    </div>
+    <div class="row m-1">
+        <div class="col bg-warning border border-5 border-light">THIRD</div>
+        <div class="col bg-warning border border-5 border-light">THIRD</div>
+        <div class="col bg-warning border border-5 border-light">THIRD</div>
+    </div>
+    <div class="row m-1">
+        <div class="col bg-dark text-light border border-5 border-light">1/4</div>
+        <div class="col bg-dark text-light border border-5 border-light">1/4</div>
+        <div class="col bg-dark text-light border border-5 border-light">1/4</div>
+        <div class="col bg-dark text-light border border-5 border-light">1/4</div>
+    </div>
+    <div class="row m-1">
+        <div class="col-9 bg-secondary border border-5 border-light">3/4</div>
+        <div class="col-3 bg-secondary border border-5 border-light">1/4</div>
+    </div>
+    <div class="row m-1">
+        <div class="col-1 bg-success border border-5 border-light">1</div>
+        <div class="col-10 bg-success border border-5 border-light">10 column</div>
+        <div class="col-1 bg-success border border-5 border-light">1</div>
+    </div>
+
+    <!-- Popper File -->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap File -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
