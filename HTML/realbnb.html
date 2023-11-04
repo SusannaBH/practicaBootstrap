@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Realbnb</title>
+    <!-- Enlace que llama a Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');    
+        .texto{
+            font-family: 'Playpen Sans', cursive;
+            font-size: 0.9em;
+        }
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: aqua;
+            text-shadow: 2px 2px 4px #0707fd;
+            border: 4px dotted rgb(7, 222, 255);
+            border-radius: 50px;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="texto container">
+    <header class="d-flex align-items-center justify-content-between">
+        <h1>Realbnb</h1>
+        <div class="w-50">
+            <input type="text" id="searchInput" class="form-control mt-3" placeholder="Search Listings..." onkeyup="searchFunction()">
+            <ul class="list-group mt-3" id="list" style="display: none;">
+                <li class="list-group-item">Rock Start Villa (Maldivas)</li>
+                <li class="list-group-item">Luxury Pool Villa (Seychelles)</li>
+                <li class="list-group-item">Limneon Resort (Grecia)</li>
+                <li class="list-group-item">Atlantis Resort (Bahamas)</li>
+                <li class="list-group-item">Padma Resort Ubud (Bali)</li>
+                <li class="list-group-item">Gold Beach PoolVilla (Maldivas)</li>
+                <li class="list-group-item">Amorita Villas (Filipinas)</li>
+                <li class="list-group-item">Villa White Pearl (España)</li>
+                <li class="list-group-item">Oceanfront Villa (Bahamas)</li>
+                <li class="list-group-item">Villa Contenta (Florida)</li>
+                <li class="list-group-item">Ayana Resort (Bali)</li>
+                <li class="list-group-item">Four Seasons Resort (Thailandia)</li>
+            </ul>
+        </div>
+        <button class="btn btn-info border border-5 border-dark rounded">LOGIN</button>
+    </header>
+    <main>
+        <div class="row gx-3 justify-content-center">
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/RockStarVilla_MALDIVAS.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.8 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Rock Start Villa</h3>
+                    <h6>MALDIVAS</h6>
+                    <p>Live like the rich and famous. Our 1-bedroom Rock Star Villa boasts
+                        a private boat docking, a private butler, a tuk-tuk bar, an infinity
+                        pool, Jukebox, large outdoor living area, and a service pantry. Let
+                        loose in Emboodhoo Lagoon.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 4 sleeps<div class="text-success">€3,670/night</div></div>
+                        <a href="https://www.hardrockhotels.com/maldives/rooms-and-villas.aspx" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/LuxusPoolvilla_SEYCHELLES.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">5.0 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Luxury Pool Villa</h3>
+                    <h6>SEYCHELLES</h6>
+                    <p>Perfectly located on the edge of the peninsula, offering the
+                        experience of ultimate privacy and open views of the Indian Ocean.
+                        Enjoy the magical moments of the Seychelles sunsets relaxing from
+                        your outdoor bath tub or while enjoying a refreshing swim in your
+                        infinity pool. The ultimate hideaway for honeymooners.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 4 sleeps<div class="text-success">€2,227/night</div></div>
+                        <a href="https://www.hardrockhotels.com/maldives/rooms-and-villas.aspx"class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/LimneonResortSpa_GRECIA.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.2 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Limneon Resort</h3>
+                    <h6>GRECIA</h6>
+                    <p>The two- bedroom Superior Suite is a dreamy room dressed in pale ivory
+                        and chocolate colours with two verandas which overlook the most
+                        beautiful part of the lake of Kastoria. These two- bedroom suites
+                        are suitable for accommodating couples as well as families of four.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ DUO ~ 2 sleeps<div class="text-success">€245/night</div></div>
+                        <a href="https://www.limneon.com/en/accommodation/" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/AtlantisResort_BAHAMAS.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.4 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Atlantis Resort</h3>
+                    <h6>BAHAMAS</h6>
+                    <p>Enjoy more space in beautifully appointed suites offering
+                        1-2-bedrooms, living room and stunning views from your full
+                        or balcony. Overflowing with a serene beach ambiance, our
+                        Premium rooms offer a contemporary and comfortable experience.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 5 sleeps<div class="text-success">€1,100/night</div></div>
+                        <a href="https://www.atlantisbahamas.com/rooms/coraltowers/accommodations"class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/PadmaResortUbud_BALI.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">5.0 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Padma Resort Ubud</h3>
+                    <h6>BALI</h6>
+                    <p>Designed for families, small groups or discerning travellers
+                        who desire refined residential extravagance with the luxury
+                        of additional space, our cavernous Two-Bedroom Suites are the
+                        pinnacle of Padma-inspired luxury.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 6 sleeps<div class="text-success">€770/night</div></div>
+                        <a href="https://www.padmaresortubud.com/rooms/two-bedroom-suite.php" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/GoldBeachPoolVilla_MALDIVAS.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.8 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Gold Beach PoolVilla</h3>
+                    <h6>MALDIVAS</h6>
+                    <p>Enjoy the best of both worlds by having your own plunge pool
+                        and direct beach access. Our Gold Beach Pool Villa features
+                        1 king bed, ocean views, a sofa bed, and an en suite bathroom
+                        with double vanity sinks and a high-walled bathtub.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 3 sleeps<div class="text-success">€791/night</div></div>
+                        <a href="https://www.hardrockhotels.com/maldives/rooms-and-villas.aspx" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/AmoritaResort_FILIPINAS.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.6 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Amorita Villas</h3>
+                    <h6>FILIPINAS</h6>
+                    <p>Luxurious and secluded, this 240 sqm villa opens out to a deck
+                        with 4 sun beds, a lap pool, and a private lawn. It has
+                        2 bedrooms: master bedroom has a king bed while the other
+                        bedroom has 2 double beds.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 2 sleeps<div class="text-success">€285/night</div></div>
+                        <a href="https://www.amoritaresort.com/rooms.php" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/villa-white-pearl_ESPAÑA.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.9 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Villa White Pearl</h3>
+                    <h6>ESPAÑA</h6>
+                    <p>It has direct access to the sea with mooring possibility for big boats.
+                        After a short walk of 5 minutes you will be able to relax on a sand
+                        beach. Villa White Pearl is a lovely house located in Es Cubells in
+                        the South of Ibiza Island.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ DUO ~ 6 sleeps<div class="text-success">€2,900/night</div></div>
+                        <a href="https://villapearl-ibiza.com/" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/OceanfrontVilla_BAHAMAS.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.3 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Oceanfront Villa</h3>
+                    <h6>BAHAMAS</h6>
+                    <p>This family friendly home is located on the Western end of New
+                        Providence with stunning views and spacious accommodations.
+                        The large patio and pool area overlook the turquoise waters
+                        which makes for the perfect place to spend your afternoons in
+                        the sun.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ DUO ~ 10 sleeps<div class="text-success">€930/night</div></div>
+                        <a href="https://es-l.airbnb.com/rooms/43245905?source_impression_id=p3_1699129487_fsLj6ys2QG4kYYmP" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/VillaContenta_MIAMI.jpg" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">5.0 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Villa Contenta</h3>
+                    <h6>FLORIDA</h6>
+                    <p>Contenta can only be described as spectacular from just about every
+                        standpoint. The huge 11,000 sq ft (1,022m²) villa, built in the
+                        Spanish Colonial style on exclusive Palm Island, has views across
+                        Biscayne Bay towards South Beach. Superbly luxurious Miami villa
+                        rental on exclusive Palm Island.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 6 sleeps<div class="text-success">€4,630/night</div></div>
+                        <a href="https://www.villanovo.es/alquiler-villas/america-del-norte/estados-unidos/florida/miami/villa-contenta" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/AyanaResort_BALI.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.8 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Ayana Resort</h3>
+                    <h6>BALI</h6>
+                    <p>The Resort View Room is designed for maximum comfort and peace
+                        of mind, giving every guest the gift of pure relaxation with
+                        tranquil garden views from this spacious, natural light-filled
+                        getaway. Appointed with expansive marble floors to make each
+                        step a truly luxurious experience.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 3 sleeps<div class="text-success">€230/night</div></div>
+                        <a href="https://www.ayana.com/bali/ayana-resort-and-spa/" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-sm-6 col-lg-4 col-xl-3">
+                <div class="position-relative mt-3">
+                    <img src="/IMAGES/FourSeasons_Thailandia.png" alt="" class="img-fluid rounded">
+                    <button class="position-absolute top-0 start-0 mt-2 ms-2 opacity-50 rounded">💖</button>
+                    <button class="position-absolute top-0 end-0 mt-2 me-2 opacity-50 rounded">4.9 ⭐</button>
+                </div>
+                <div class="card-body">
+                    <h3>Four Seasons Resort</h3>
+                    <h6>THAILANDIA</h6>
+                    <p>Sink into a deckchair or soak in your private infinity pool before
+                        retreating to your sprawling bedroom, decked out in island-inspired
+                        sea greens and blues. Outdoor area furnished with daybed, marble
+                        dining table with two chairs and two sun lounges</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>🛏️ KING ~ 2 sleeps<div class="text-success">€1,280/night</div></div>
+                        <a href="https://www.fourseasons.com/kohsamui/accommodations/" class="btn bg-info right btn-sm">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FUNCION DEL BUSCADOR -->
+    <script>
+        function searchFunction() {
+            let input, filter, ul;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("list");
+            if (filter) {
+                ul.style.display = "block";
+                let li = ul.getElementsByTagName('li');
+                for (let i = 0; i < li.length; i++) {
+                    let txtValue = li[i].textContent || li[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            } else {
+                ul.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Enlace que llama a Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
